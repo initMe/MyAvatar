@@ -6,8 +6,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ChatInterface } from '@/components/features/ChatInterface';
 import { FeatureHighlights } from '@/components/features/FeatureHighlights';
-import { HowItWorks } from '@/components/features/HowItWorks';
-import { DigitalHumanUseCases } from '@/components/features/DigitalHumanUseCases'; // Added import
+// import { HowItWorks } from '@/components/features/HowItWorks'; // Removed import
+import { DigitalHumanUseCases } from '@/components/features/DigitalHumanUseCases';
 import { PricingSection } from '@/components/features/PricingSection';
 import { ContactSection } from '@/components/features/ContactSection';
 import { Button } from '@/components/ui/button';
@@ -81,8 +81,8 @@ export default function Home() {
         </section>
 
         <FeatureHighlights />
-        <HowItWorks />
-        <DigitalHumanUseCases /> {/* Added new section */}
+        {/* <HowItWorks /> */} {/* Removed HowItWorks section */}
+        <DigitalHumanUseCases />
         <PricingSection />
         <section id="contact-section">
           <ContactSection />
