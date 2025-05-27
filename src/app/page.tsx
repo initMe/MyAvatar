@@ -6,7 +6,8 @@ import { Footer } from '@/components/layout/Footer';
 import { AvatarDisplay } from '@/components/features/AvatarDisplay';
 import { ChatInterface } from '@/components/features/ChatInterface';
 import { FeatureHighlights } from '@/components/features/FeatureHighlights';
-import { HowItWorks } from '@/components/features/HowItWorks'; // Import the new component
+import { HowItWorks } from '@/components/features/HowItWorks';
+import { PricingSection } from '@/components/features/PricingSection'; // Import the new component
 
 export default function Home() {
   const chatInterfaceRef = useRef<HTMLDivElement>(null);
@@ -33,7 +34,8 @@ export default function Home() {
         </section>
 
         <FeatureHighlights />
-        <HowItWorks /> {/* Add the new HowItWorks section */}
+        <HowItWorks />
+        <PricingSection /> {/* Add the new PricingSection component */}
       </main>
       <Footer />
     </div>
