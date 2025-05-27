@@ -7,7 +7,8 @@ import { AvatarDisplay } from '@/components/features/AvatarDisplay';
 import { ChatInterface } from '@/components/features/ChatInterface';
 import { FeatureHighlights } from '@/components/features/FeatureHighlights';
 import { HowItWorks } from '@/components/features/HowItWorks';
-import { PricingSection } from '@/components/features/PricingSection'; // Import the new component
+import { PricingSection } from '@/components/features/PricingSection';
+import { ContactSection } from '@/components/features/ContactSection'; // Import the new ContactSection
 
 export default function Home() {
   const chatInterfaceRef = useRef<HTMLDivElement>(null);
@@ -35,7 +36,8 @@ export default function Home() {
 
         <FeatureHighlights />
         <HowItWorks />
-        <PricingSection /> {/* Add the new PricingSection component */}
+        <PricingSection />
+        <ContactSection /> {/* Add the new ContactSection component here */}
       </main>
       <Footer />
     </div>

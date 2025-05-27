@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Providers } from './providers'; // QueryClientProvider for Genkit
 
 export const metadata: Metadata = {
-  title: 'Ethereal Echo',
-  description: 'Your AI Digital Companion',
+  title: '空灵回响 - 您的AI数字伴侣',
+  description: '您的AI数字伴侣，提供个性化交互和情感支持。',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="zh-CN">
       <body className={`${orbitron.variable} ${roboto.variable} font-sans antialiased bg-background text-foreground`}>
         <Providers>
           {children}

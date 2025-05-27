@@ -11,7 +11,7 @@ export function Header() {
         <nav>
           <Button variant="link" asChild>
             <Link href="/about" className="text-foreground hover:text-accent transition-colors font-orbitron">
-              About Digital Human
+              关于数字人
             </Link>
           </Button>
         </nav>
