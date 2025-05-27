@@ -113,7 +113,7 @@ body {
 /* Custom glassmorphism utility */
 @layer utilities {
   .glassmorphism {
-    @apply bg-card/50 backdrop-blur-lg border border-accent/30 shadow-lg;
+    @apply bg-card/50 backdrop-blur-lg border-[3px] border-accent/30 shadow-lg;
   }
   .neon-glow-primary {
     /* Reduced blur and spread */
