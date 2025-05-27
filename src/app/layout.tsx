@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next';
-import { orbitron, roboto } from '@/lib/fonts';
+import { orbitron, nunito } from '@/lib/fonts';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from './providers'; // QueryClientProvider for Genkit
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${orbitron.variable} ${roboto.variable} font-sans antialiased bg-background text-foreground`}>
+      <body className={`${orbitron.variable} ${nunito.variable} font-sans antialiased bg-background text-foreground`}>
         <Providers>
           {children}
           <Toaster />
@@ -26,4 +26,3 @@ export default function RootLayout({
     </html>
   );
 }
-

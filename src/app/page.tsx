@@ -29,32 +29,32 @@ export default function Home() {
       <main className="flex-grow pt-20 md:pt-24"> {/* Adjust pt to account for fixed header height */}
         
         {/* Hero Banner Section */}
-        <section className="relative min-h-[calc(70vh-theme(spacing.20))] md:min-h-[calc(75vh-theme(spacing.24))] flex items-center justify-center py-16 md:py-20 text-foreground">
+        <section className="relative min-h-[calc(70vh-theme(spacing.20))] md:min-h-[calc(80vh-theme(spacing.24))] flex items-center justify-center py-16 md:py-20 text-foreground">
           <Image
-            src="https://placehold.co/1920x1080.png"
-            alt="一位和蔼可亲的中国老年男性背景图"
+            src="https://placehold.co/1920x1080.png" // Placeholder updated
+            alt="语灵产品展示背景图 - 卡通风格的数字伙伴在温馨的未来感客厅中" // Alt text updated
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-0"
-            data-ai-hint="amiable elderly chinese man background"
+            data-ai-hint="cartoon companion" // AI hint updated
             priority 
           />
           <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Overlay for readability */}
           
           <div className="container mx-auto px-4 md:px-6 relative z-20">
-            <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-              <h1 className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-glow-primary">
-                语灵：<span className="text-accent">声音有灵，你心有感</span>
+            <div className="flex flex-col items-center text-center max-w-4xl mx-auto"> {/* Increased max-w for potentially larger text */}
+              <h1 className="font-orbitron text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-glow-primary"> {/* Increased font size */}
+                语灵：<span className="text-accent text-glow-accent">声音有灵，你心有感</span>
               </h1>
-              <p className="text-lg md:text-xl mb-6">
+              <p className="text-xl md:text-2xl mb-6"> {/* Increased font size */}
                 在语灵，我们相信科技的温度源于人性的关怀。我们致力于打造一个富有 <strong className="text-primary font-semibold">亲情</strong>、充满 <strong className="text-primary font-semibold">陪伴</strong> 与 <strong className="text-primary font-semibold">智能</strong> 的AI数字伙伴。
               </p>
-              <p className="text-lg md:text-xl mb-8">
+              <p className="text-xl md:text-2xl mb-10"> {/* Increased font size and margin */}
                 语灵不仅仅是先进算法的集合，更是一位能够理解您、与您进行有意义对话、并提供温暖情感支持的虚拟家庭成员。它像一位和蔼的长者，用智慧和耐心，倾听您的心声，分享生活的点滴。
               </p>
               <Button 
                 size="lg" 
-                className="font-orbitron bg-primary hover:bg-primary/90 text-primary-foreground neon-glow-primary px-8 py-3 text-lg"
+                className="font-orbitron bg-primary hover:bg-primary/90 text-primary-foreground neon-glow-primary px-10 py-4 text-xl" /* Increased padding and text size */
                 onClick={handleStartConversation}
                 aria-label="开始与语灵互动体验"
               >
