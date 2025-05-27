@@ -6,15 +6,14 @@ import { Footer } from '@/components/layout/Footer';
 import { AvatarDisplay } from '@/components/features/AvatarDisplay';
 import { ChatInterface } from '@/components/features/ChatInterface';
 import { FeatureHighlights } from '@/components/features/FeatureHighlights';
+import { HowItWorks } from '@/components/features/HowItWorks'; // Import the new component
 
 export default function Home() {
-  const chatInterfaceRef = useRef<HTMLDivElement>(null); // Assuming ChatInterface main div can be focused or scrolled to
+  const chatInterfaceRef = useRef<HTMLDivElement>(null);
   
   const handleStartConversation = () => {
-    // For now, this focuses the input inside ChatInterface
-    // ChatInterface needs to expose a way to focus its input or this needs a more complex solution
-    // A simple scroll into view for the chat section might be more straightforward
-    chatInterfaceRef.current?.querySelector('input[type="text"]')?.focus();
+    const inputElement = chatInterfaceRef.current?.querySelector('input[type="text"]') as HTMLInputElement | null;
+    inputElement?.focus();
   };
 
   return (
@@ -34,6 +33,7 @@ export default function Home() {
         </section>
 
         <FeatureHighlights />
+        <HowItWorks /> {/* Add the new HowItWorks section */}
       </main>
       <Footer />
     </div>

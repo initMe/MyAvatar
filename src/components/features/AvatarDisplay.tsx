@@ -23,10 +23,10 @@ export function AvatarDisplay({ onStartConversation }: AvatarDisplayProps) {
         />
       </div>
       <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-3 text-glow-primary">
-        Meet Your Ethereal Echo
+        Your Personal Digital Companion
       </h2>
       <p className="text-muted-foreground mb-6 max-w-md">
-        I&apos;m here to listen, chat, and offer a moment of connection in your digital world.
+        Ready to chat, create, and connect? I&apos;m Ethereal Echo, your AI-powered friend.
       </p>
       <div className="space-y-4">
         <Button 
