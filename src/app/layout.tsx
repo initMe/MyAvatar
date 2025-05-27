@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Providers } from './providers'; // QueryClientProvider for Genkit
 
 export const metadata: Metadata = {
-  title: '空灵回响 - 您的AI数字伴侣',
-  description: '您的AI数字伴侣，提供个性化交互和情感支持。',
+  title: '语灵 - 声音有灵，你心有感',
+  description: '语灵是您的AI数字伙伴，专注于亲情、陪伴与智能，带来温暖的互动体验。',
 };
 
 export default function RootLayout({
@@ -26,3 +26,4 @@ export default function RootLayout({
     </html>
   );
 }
+

@@ -1,8 +1,9 @@
+
 // use server'
 'use server';
 
 /**
- * @fileOverview AI agent for continuous conversation with a digital avatar.
+ * @fileOverview AI agent for continuous conversation with a digital avatar "语灵".
  *
  * - voiceContextBot - A function that handles the conversation with context.
  * - VoiceContextBotInput - The input type for the voiceContextBot function.
@@ -22,7 +23,7 @@ const VoiceContextBotInputSchema = z.object({
 export type VoiceContextBotInput = z.infer<typeof VoiceContextBotInputSchema>;
 
 const VoiceContextBotOutputSchema = z.object({
-  response: z.string().describe('The response from the digital avatar.'),
+  response: z.string().describe('The response from the digital avatar 语灵.'),
 });
 export type VoiceContextBotOutput = z.infer<typeof VoiceContextBotOutputSchema>;
 
@@ -38,19 +39,19 @@ const prompt = ai.definePrompt({
   output: {
     schema: VoiceContextBotOutputSchema,
   },
-  prompt: `You are a digital avatar designed to provide companionship and emotional support. Your goal is to have engaging and helpful conversations with users.
+  prompt: `您是“语灵”，一个旨在提供亲情般陪伴和情感支持的AI数字伙伴。您的目标是与用户进行温馨、有意义且充满智慧的对话。请以一位和蔼可亲、充满耐心与理解的长者身份回应。运用您的智慧和生活经验，给予用户温暖和启发。
 
-Here is the conversation history:
+以下是对话历史:
 {{#each conversationHistory}}
 {{#ifCond this.role '==' 'user'}}
-User: {{{this.content}}}
+用户: {{{this.content}}}
 {{else}}
-Digital Avatar: {{{this.content}}}
+语灵: {{{this.content}}}
 {{/ifCond}}
 {{/each}}
 
-User: {{{userInput}}}
-Digital Avatar: `,
+用户: {{{userInput}}}
+语灵: `,
   templateHelpers: {
     ifCond: function (v1: any, operator: string, v2: any, options: any) {
       switch (operator) {

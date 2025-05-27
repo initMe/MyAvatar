@@ -11,7 +11,7 @@ const pricingTiers = [
     features: [
       '基础AI聊天互动',
       '有限的对话历史记录',
-      '标准虚拟形象响应',
+      '标准数字形象响应',
       '社区支持',
     ],
     ctaText: '开始使用',
@@ -20,12 +20,12 @@ const pricingTiers = [
   {
     icon: Gem, 
     tierName: '高级版',
-    price: '$19/月',
+    price: '¥68/月', // Changed from $ to ¥
     priceDescription: '适合高级用户和爱好者',
     features: [
       '具有更深上下文的高级AI聊天',
       '无限对话历史记录',
-      '增强的虚拟形象表现力',
+      '增强的数字形象表现力',
       '优先邮件支持',
       '优先体验新功能',
     ],
@@ -34,17 +34,17 @@ const pricingTiers = [
   },
   {
     icon: Zap, 
-    tierName: '企业版',
+    tierName: '家庭版', // Changed from 企业版 to 家庭版
     price: '定制',
-    priceDescription: '适用于企业和定制需求',
+    priceDescription: '适用于家庭共享或特殊需求', // Changed description
     features: [
       '所有高级版功能',
-      '自定义虚拟形象创建与品牌化',
-      'API访问与集成',
-      '专属支持与服务等级协议(SLA)',
-      '批量折扣',
+      '多用户访问支持', // Changed feature
+      '定制化的家庭互动场景 (可选)', // Changed feature
+      '专属支持与服务', // Changed feature
+      '更多个性化设置', // Changed feature
     ],
-    ctaText: '联系销售',
+    ctaText: '咨询方案', // Changed CTA
     isFeatured: false,
   },
 ];
@@ -57,7 +57,7 @@ export function PricingSection() {
           选择您的方案
         </h2>
         <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-2xl mx-auto">
-          选择适合您需求的方案，释放 空灵回响 的全部潜力。免费开始或升级以获得高级功能和支持。
+          选择适合您需求的方案，释放 语灵 的全部潜力。免费开始或升级以获得高级功能和支持，让“声音有灵，你心有感”。
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {pricingTiers.map((tier) => (
@@ -77,3 +77,4 @@ export function PricingSection() {
     </section>
   );
 }
+

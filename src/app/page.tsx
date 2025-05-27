@@ -8,7 +8,7 @@ import { ChatInterface } from '@/components/features/ChatInterface';
 import { FeatureHighlights } from '@/components/features/FeatureHighlights';
 import { HowItWorks } from '@/components/features/HowItWorks';
 import { PricingSection } from '@/components/features/PricingSection';
-import { ContactSection } from '@/components/features/ContactSection'; // Import the new ContactSection
+import { ContactSection } from '@/components/features/ContactSection';
 
 export default function Home() {
   const chatInterfaceRef = useRef<HTMLDivElement>(null);
@@ -37,9 +37,12 @@ export default function Home() {
         <FeatureHighlights />
         <HowItWorks />
         <PricingSection />
-        <ContactSection /> {/* Add the new ContactSection component here */}
+        <section id="contact-section"> {/* Added id for scrolling */}
+          <ContactSection />
+        </section>
       </main>
       <Footer />
     </div>
   );
 }
+

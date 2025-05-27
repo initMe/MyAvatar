@@ -11,7 +11,7 @@ export function Header() {
         <nav>
           <Button variant="link" asChild>
             <Link href="/about" className="text-foreground hover:text-accent transition-colors font-orbitron">
-              关于数字人
+              关于语灵
             </Link>
           </Button>
         </nav>
@@ -19,3 +19,4 @@ export function Header() {
     </header>
   );
 }
+
