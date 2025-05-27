@@ -53,7 +53,7 @@ export function PricingSection() {
   return (
     <section className="py-16 md:py-24 bg-background/70">
       <div className="container mx-auto px-6 md:px-10">
-        <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-center mb-4 text-glow-primary">
+        <h2 className="font-orbitron text-3xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-glow-primary">
           选择您的方案
         </h2>
         <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-2xl mx-auto">
@@ -77,4 +77,3 @@ export function PricingSection() {
     </section>
   );
 }
-
