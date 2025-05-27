@@ -31,7 +31,7 @@ export default function Home() {
         {/* Hero Banner Section */}
         <section className="relative min-h-[calc(70vh-theme(spacing.20))] md:min-h-[calc(80vh-theme(spacing.24))] flex items-center justify-center py-16 md:py-20 text-foreground">
           <Image
-            src="https://placehold.co/1920x1080.png" 
+            src="/images/banner.png"
             alt="语灵产品展示背景图 - 卡通风格的数字伙伴在温馨的未来感客厅中" 
             layout="fill"
             objectFit="cover"
