@@ -27,7 +27,7 @@ RUN npm ci --omit=dev
 # 从构建阶段复制构建产物
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/next.config.js ./next.config.js
+COPY --from=builder /app/next.config.ts ./next.config.ts
 
 # 使用非root用户运行（提高安全性）
 RUN addgroup -S app && adduser -S app -G app
