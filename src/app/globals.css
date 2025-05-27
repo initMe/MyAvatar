@@ -10,19 +10,19 @@ body {
 @layer base {
   :root {
     --background: 25 20% 12%; /* Dark Warm Umber */
-    --foreground: 35 30% 92%; /* Warm Off-White/Light Beige */
+    --foreground: 35 30% 95%; /* Warm Off-White/Light Beige - Increased lightness for better contrast */
 
     --card: 25 20% 15%; /* Slightly lighter than background */
-    --card-foreground: 35 30% 92%;
+    --card-foreground: 35 30% 95%;
 
     --popover: 25 20% 10%; /* Darker than background for popovers */
-    --popover-foreground: 35 30% 92%;
+    --popover-foreground: 35 30% 95%;
 
     --primary: 28 90% 62%; /* Vibrant Warm Coral (#F98852) */
     --primary-foreground: 28 90% 97%; /* Very Light Coral for text on primary */
 
     --secondary: 30 15% 28%; /* Medium-Dark Warm Gray */
-    --secondary-foreground: 35 30% 92%;
+    --secondary-foreground: 35 30% 95%;
 
     --muted: 30 12% 20%; /* Dark Warm Gray for muted elements */
     --muted-foreground: 35 20% 65%; /* Lighter Warm Gray for muted text */
@@ -60,15 +60,15 @@ body {
   .dark {
     /* Dark theme is default, ensuring consistency with new warm theme */
     --background: 25 20% 12%;
-    --foreground: 35 30% 92%;
+    --foreground: 35 30% 95%;
     --card: 25 20% 15%;
-    --card-foreground: 35 30% 92%;
+    --card-foreground: 35 30% 95%;
     --popover: 25 20% 10%;
-    --popover-foreground: 35 30% 92%;
+    --popover-foreground: 35 30% 95%;
     --primary: 28 90% 62%;
     --primary-foreground: 28 90% 97%;
     --secondary: 30 15% 28%;
-    --secondary-foreground: 35 30% 92%;
+    --secondary-foreground: 35 30% 95%;
     --muted: 30 12% 20%;
     --muted-foreground: 35 20% 65%;
     --accent: 45 95% 68%;
@@ -116,16 +116,16 @@ body {
     @apply bg-card/50 backdrop-blur-lg border border-accent/30 shadow-lg;
   }
   .neon-glow-primary {
-    box-shadow: 0 0 5px theme(colors.primary), 0 0 10px theme(colors.primary / 0.8), 0 0 15px theme(colors.primary / 0.6);
+    box-shadow: 0 0 7px hsl(var(--primary) / 0.9), 0 0 15px hsl(var(--primary) / 0.7), 0 0 25px hsl(var(--primary) / 0.5);
   }
   .neon-glow-accent {
-     box-shadow: 0 0 5px theme(colors.accent), 0 0 10px theme(colors.accent / 0.8), 0 0 15px theme(colors.accent / 0.6);
+     box-shadow: 0 0 7px hsl(var(--accent) / 0.9), 0 0 15px hsl(var(--accent) / 0.7), 0 0 25px hsl(var(--accent) / 0.5);
   }
    .text-glow-primary {
-    text-shadow: 0 0 5px theme(colors.primary / 0.7), 0 0 10px theme(colors.primary / 0.5), 0 0 15px theme(colors.primary / 0.3); /* Enhanced glow */
+    text-shadow: 0 0 6px hsl(var(--primary) / 0.8), 0 0 10px hsl(var(--primary) / 0.6), 0 0 18px hsl(var(--primary) / 0.4);
   }
   .text-glow-accent {
-    text-shadow: 0 0 5px theme(colors.accent / 0.7), 0 0 10px theme(colors.accent / 0.5), 0 0 15px theme(colors.accent / 0.3); /* Enhanced glow */
+    text-shadow: 0 0 6px hsl(var(--accent) / 0.8), 0 0 10px hsl(var(--accent) / 0.6), 0 0 18px hsl(var(--accent) / 0.4);
   }
 }
 
@@ -133,15 +133,14 @@ body {
 @keyframes breathing {
   0%, 100% {
     transform: scale(1);
-    filter: drop-shadow(0 0 5px hsl(var(--accent) / 0.5));
+    filter: drop-shadow(0 0 6px hsl(var(--accent) / 0.5)) drop-shadow(0 0 12px hsl(var(--accent) / 0.3));
   }
   50% {
-    transform: scale(1.03);
-    filter: drop-shadow(0 0 15px hsl(var(--accent) / 0.8));
+    transform: scale(1.04); /* Slightly increased scale */
+    filter: drop-shadow(0 0 10px hsl(var(--accent) / 0.7)) drop-shadow(0 0 20px hsl(var(--accent) / 0.5)); /* Enhanced glow */
   }
 }
 
 .avatar-breathing {
   animation: breathing 5s ease-in-out infinite;
 }
-
