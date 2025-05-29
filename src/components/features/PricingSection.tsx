@@ -5,14 +5,15 @@ import { Rocket, Gem, Zap } from 'lucide-react';
 const pricingTiers = [
   {
     icon: Rocket,
-    tierName: '入门版',
-    price: '免费',
-    priceDescription: '适合刚开始使用的个人用户',
+    tierName: '基础版',
+    price: '¥200/月',
+    priceDescription: '适合并发量较小的个人用户或小企业',
     features: [
       '基础AI聊天互动',
+      '一比一真实数字人形象',
+      '一站式部署，支持多路并发对话',
       '有限的对话历史记录',
-      '标准数字形象响应',
-      '社区支持',
+      '及时的技术支持',
     ],
     ctaText: '开始使用',
     isFeatured: false,
@@ -20,29 +21,29 @@ const pricingTiers = [
   {
     icon: Gem, 
     tierName: '高级版',
-    price: '¥68/月', // Changed from $ to ¥
-    priceDescription: '适合高级用户和爱好者',
+    price: '¥500/月', // Changed from $ to ¥
+    priceDescription: '适合需要多路并发的高级用户和中小型企业', 
     features: [
       '具有更深上下文的高级AI聊天',
       '无限对话历史记录',
-      '增强的数字形象表现力',
-      '优先邮件支持',
+      '更多路数的并发对话',
       '优先体验新功能',
+      '优先技术支持',
     ],
     ctaText: '升级高级版',
     isFeatured: true,
   },
   {
     icon: Zap, 
-    tierName: '家庭版', // Changed from 企业版 to 家庭版
+    tierName: '定制版', // Changed from 企业版 to 家庭版
     price: '定制',
-    priceDescription: '适用于家庭共享或特殊需求', // Changed description
+    priceDescription: '适用于更高并发的需求和大型企业', // Changed description
     features: [
       '所有高级版功能',
-      '多用户访问支持', // Changed feature
-      '定制化的家庭互动场景 (可选)', // Changed feature
-      '专属支持与服务', // Changed feature
-      '更多个性化设置', // Changed feature
+      '无上限的并发支持', 
+      '定制化的互动场景 (可选)', 
+      '专属支持与服务', 
+      '更多个性化设置', 
     ],
     ctaText: '咨询方案', // Changed CTA
     isFeatured: false,
