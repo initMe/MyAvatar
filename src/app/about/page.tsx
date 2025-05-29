@@ -1,9 +1,15 @@
 
+import type { Metadata } from 'next';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '关于语灵 - 愿景、技术与使命 | 您的AI数字伙伴',
+  description: '深入了解“语灵”如何通过先进的AI技术，为您打造一个充满亲情、智慧与个性化陪伴的数字伙伴。探索我们的愿景、核心技术以及我们如何定义未来的人机情感交互。',
+};
 
 export default function AboutPage() {
   return (
