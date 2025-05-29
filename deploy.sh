@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 配置变量
-IMAGE_NAME="Yulyn"
+IMAGE_NAME="yulyn"
 TAG="1.0"
-CONTAINER_NAME="Yulyn"
+CONTAINER_NAME="yulyn"
 
 echo "🔍 正在停止并删除旧容器..."
 
