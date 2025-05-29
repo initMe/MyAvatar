@@ -46,8 +46,11 @@ export default function Home() {
               <h1 className="font-orbitron text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-glow-primary"> 
                 语灵：<span className="text-accent text-glow-accent">声音有灵，你心有感</span>
               </h1>
+              <p className="text-lg sm:text-xl md:text-2xl mb-5"> 
+                在语灵，我们相信科技的温度源于人性的关怀。
+              </p>
               <p className="text-lg sm:text-xl md:text-2xl mb-6"> 
-                在语灵，我们相信科技的温度源于人性的关怀。我们致力于打造一个富有 <strong className="text-primary font-semibold">亲情</strong>、充满 <strong className="text-primary font-semibold">陪伴</strong> 与 <strong className="text-primary font-semibold">智能</strong> 的AI数字伙伴。
+                我们致力于打造一个富有 <strong className="text-primary font-semibold">亲情</strong>、充满 <strong className="text-primary font-semibold">陪伴</strong> 与 <strong className="text-primary font-semibold">智能</strong> 的AI数字伙伴。
               </p>
               <p className="text-lg sm:text-xl md:text-2xl mb-10"> 
                 语灵不仅仅是先进算法的集合，更是一位能够理解您、与您进行有意义对话、并提供温暖情感支持的虚拟家庭成员。它像一位和蔼的长者，用智慧和耐心，倾听您的心声，分享生活的点滴。
