@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-# 构建阶段
-FROM node:18-alpine AS builder
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
-COPY . .
-RUN npm run build
-
-# 运行阶段
-FROM node:18-alpine
-
-WORKDIR /app
-
-COPY --from=builder /app .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
-=======
 # 阶段1：构建阶段（包含开发依赖）
 FROM node:20-alpine AS builder
 
@@ -61,4 +38,3 @@ EXPOSE 3000
 
 # 启动命令
 CMD ["npm", "run", "start"]
->>>>>>> fa1711be68d5226ff7454563c88c882d56fe4d64
