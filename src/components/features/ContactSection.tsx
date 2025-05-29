@@ -3,8 +3,8 @@
 
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { QrCode, Mail, MessageSquare } from 'lucide-react'; // Assuming QrCode is for a general QR
-import Link from 'next/link'; // Correct import for Next.js Link
+import { QrCode, Mail, MessageSquare } from 'lucide-react';
+import Link from 'next/link';
 
 export function ContactSection() {
   return (
@@ -27,7 +27,7 @@ export function ContactSection() {
             <CardContent className="flex flex-col items-center text-center">
               <div className="relative w-48 h-48 md:w-56 md:h-56 mb-4 rounded-lg overflow-hidden border-2 border-accent/50">
                 <Image
-                  src="https://placehold.co/256x256.png" // Placeholder for QR code
+                  src="/images/qiyeweixin.png" 
                   alt="联系二维码"
                   layout="fill"
                   objectFit="contain"
