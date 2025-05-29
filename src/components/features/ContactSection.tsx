@@ -35,7 +35,7 @@ export function ContactSection() {
                 />
               </div>
               <p className="text-muted-foreground">
-              对于商务合作或详细咨询，请扫描上方二维码添加企业微信。
+              对于商务合作或详细咨询，请您添加企业微信
               </p>
             </CardContent>
           </Card>
