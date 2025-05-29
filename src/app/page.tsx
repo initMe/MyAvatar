@@ -31,8 +31,8 @@ export default function Home() {
         {/* Hero Banner Section */}
         <section className="relative min-h-[calc(70vh-theme(spacing.20))] md:min-h-[calc(80vh-theme(spacing.24))] flex items-center justify-center py-16 md:py-20 text-foreground">
           <Image
-            src="/images/banner.png"
-            alt="语灵产品展示背景图 - 卡通风格的数字伙伴在温馨的未来感客厅中" 
+            src="/images/banner.png" // Assuming you've placed your image at public/images/banner.png
+            alt="语灵产品展示背景图 - AI数字伙伴提供智能陪伴" 
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-0"
@@ -46,7 +46,7 @@ export default function Home() {
               <h1 className="font-orbitron text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-glow-primary"> 
                 语灵：<span className="text-accent text-glow-accent">声音有灵，语有灵犀</span>
               </h1>
-              <h3 className="font-orbitron text-4xl sm:text-5xl md:text-6xl lg:text-4xl font-bold mb-6 text-glow-primary"> 
+              <h3 className="font-orbitron text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 text-glow-primary"> 
                 1:1 真人建模 × 实时AI互动，重构人与数字的边界
               </h3>
               <p className="text-lg sm:text-xl md:text-2xl mb-5"> 
@@ -73,7 +73,7 @@ export default function Home() {
         {/* Chat Experience Section */}
         <section id="chat-experience-section" ref={chatExperienceSectionRef} className="py-16 md:py-24 bg-background/80">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="font-orbitron text-3xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-glow-primary">
+            <h2 className="font-orbitron text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-glow-primary">
               与 语灵 互动体验
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
