@@ -6,13 +6,13 @@ const pricingTiers = [
   {
     icon: Rocket,
     tierName: '基础版',
-    price: '¥200/月',
+    price: '198/月',
     priceDescription: '适合并发量较小的个人用户或小企业',
     features: [
-      '基础AI聊天互动',
-      '一比一真实数字人形象',
+      '不限时长对话聊天',
+      '一比一真实数字人形象定制',
       '一站式部署，支持多路并发对话',
-      '有限的对话历史记录',
+      '自然流畅的语音交互',
       '及时的技术支持',
     ],
     ctaText: '开始使用',
@@ -21,14 +21,14 @@ const pricingTiers = [
   {
     icon: Gem, 
     tierName: '高级版',
-    price: '¥500/月', // Changed from $ to ¥
+    price: '298/月', // Changed from $ to ¥
     priceDescription: '适合需要多路并发的高级用户和中小型企业', 
     features: [
       '具有更深上下文的高级AI聊天',
-      '无限对话历史记录',
+      '更多音色选择',
       '更多路数的并发对话',
       '优先体验新功能',
-      '优先技术支持',
+      '支持多语言对话',
     ],
     ctaText: '升级高级版',
     isFeatured: true,
@@ -42,8 +42,8 @@ const pricingTiers = [
       '所有高级版功能',
       '无上限的并发支持', 
       '定制化的互动场景 (可选)', 
+      '支持声音克隆，还原真人音色', 
       '专属支持与服务', 
-      '更多个性化设置', 
     ],
     ctaText: '咨询方案', // Changed CTA
     isFeatured: false,
