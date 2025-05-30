@@ -5,23 +5,23 @@ import { Users, Sparkles, MessagesSquare, Brain } from 'lucide-react'; // Replac
 const features = [
   {
     icon: Users, // Changed from UserRound
-    title: '富有表现力的数字形象',
+    title: '1：1 真人定制',
     description: '语灵基于1:1建模与高精渲染技术，通过先进的算法和大量的数据训练，还原真实人物形象，实现可信、亲切的互动体验。',
   },
   {
     icon: Sparkles,
-    title: '多场景适配',
-    description: '无论是陪伴、导览还是服务咨询，语灵都能以恰当的方式出现，贴心响应每一次需求',
+    title: '灵活交付',
+    description: '支持 API、SDK 等多种接入方式，支持在线以及私有化部署使用，语灵贴心响应每一次需求',
   },
   {
     icon: MessagesSquare, // Changed from MessageSquareText
-    title: '智慧温情的对话',
-    description: '体验有深度、有上下文的对话。语灵学习并适应您，记住重要点滴，并提供充满智慧与关怀的回应。',
+    title: '实时智能的对话',
+    description: '通过多年的技术优化和特有的技术架构，语灵能在毫秒级别理解用户意图并生成智能且具有温度的回复',
   },
   {
     icon: Brain, // Changed from Lightbulb
-    title: '情感慰藉与智能辅助',
-    description: '无论您需要情感上的慰藉，生活的建议，还是仅仅是分享喜怒哀乐，语灵都在这里，用智能和爱心陪伴您。',
+    title: '多模态交互',
+    description: '围绕以文本、语音、NLP、以及四位一体（情感、记忆、个性、知识）的实时对话大模型等多模态技术为基础，通过端云协同的架构，构建的具备情感化的双工交互数字人。',
   },
 ];
 

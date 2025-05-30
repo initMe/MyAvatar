@@ -1,6 +1,6 @@
 
 'use client';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -12,6 +12,9 @@ import { ContactSection } from '@/components/features/ContactSection';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const chatExperienceSectionRef = useRef<HTMLDivElement>(null);
   
   const handleStartConversation = () => {
