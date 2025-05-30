@@ -84,7 +84,7 @@ export default function Home() {
                 the src should be "/videos/yuling_demo.mp4".
               */}
               <video
-                src="/videos/placeholder_demo.mp4" // Replace with your video path
+                src="/videos/20250530135054611.mp4" // Replace with your video path
                 controls
                 autoPlay
                 muted // Autoplay often requires video to be muted initially
